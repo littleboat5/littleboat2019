@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+    <meta charset="utf-8" />
+    <title>littleboat5</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <script src="./assets/js/jquery-3.4.1.min.js" ></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./components/util.js"></script>
+  </head>
+
+  <body class="gallery">
+
+<!-- cannot use header.js coz the meta tag will be pushed down in the display
+html hance ruining the encoding -->
+<!-- <script  src="./components/partials/header.js"></script> -->
+
+<div id="main_navbar"></div> <!-- place holder for the nav bar -->
+
+<button id="journal-teahorse" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_TEAHORSE}`">
+  <div class="container">
+    <h1 class="display-4">獨走橫斷山</h1>
+    <h4>西南行之一</h4>
+    <h5>2007</h5>
+    <p>來往雲南西藏必須橫越橫斷山脈，這段路兩千年來叫「茶馬古道」，修公路後即是「滇藏線」。無論是茶馬古道抑或滇藏線，走在這條道上的驛者從來未能安心過，我們也別驕傲地妄想把橫斷山完全征服，這樣一個巨大的天然屏障放在那兒，其目的除了是刺激人類克服困難的創意，更是要讓人對大自然的創造者生出敬畏，認識自己的渺少與有限。</p>
+    <p><a href="./toc.html?topic=journal-teahorse">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-tibet" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_TIBET}`">
+  <div class="container">
+    <h1 class="display-4">西藏．珠峰</h1>
+    <h4>西南行之二</h4>
+    <h5>2007</h5>
+    <p></p>
+    <p><a href="./toc.html?topic=journal-tibet">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-annapurna" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_ANNAPURNA}`">
+  <div class="container">
+    <h1 class="display-4">徒步喜瑪拉雅</h1>
+    <h4>西南行之三</h4>
+    <h5>2007</h5>
+    <p>在人間，有沒有一片淨土仍未被人間污染？如果有，那肯定是人去不到的極地。雖然地球大概沒半吋土地不曾被人跡遍及，不過對地球的最高處，喜瑪拉雅山，我仍存著純淨的想望，那些積雪亙古不化的雪嶺是生命的禁區，縱使大地蒙了咒詛，雪山仍存留著創造時的美好。被放逐到俗世流浪的人，心底的一角落裡，總藏著一絲還鄉的渴求，尋回聖潔，成為人最終極的需要。徒步喜瑪拉雅，是一趟屬於我的靈魂之旅。</p>
+    <p><a href="./toc.html?topic=journal-annapurna">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-nepal" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_NEPAL}`">
+  <div class="container">
+    <h1 class="display-4">加德滿都</h1>
+    <h4>西南行之四</h4>
+    <h5>2007</h5>
+    <p><a href="./toc.html?topic=journal-nepal">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-sichuan" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_SICHUAN}`">
+  <div class="container">
+    <h1 class="display-4">蜀地深秋</h1>
+    <h4>西南行之五</h4>
+    <h5>2007</h5>
+    <p><a href="./toc.html?topic=journal-sichuan">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-silkroad" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_SILKROAD}`">
+  <div class="container">
+    <h1 class="display-4">縱橫西域</h1>
+    <h5>2005</h5>
+    <p>在中土文化歷史武俠小說的浸泡下長大學習的人，對「西域」這個誘人的詞𢑥是完全缺乏扺抗力的。西域擁有一切浪漫與幻想的元素：雪山、草原、大漠、廢墟、古城、寶藏、劍客、天馬。西域是不受羈勒的豪士縱橫之場，是企圖擺脫世俗纏繞之人的夢想之鄉。西域遼闊，是塊能讓身體放飛的自由之疆。對承繼農耕文明的都市人來說，有什麼比在無邊際的草原上策馬逐鷹更有吸引力？</p>
+    <p>對不安現狀心常戚戚的人來說，行走是最好的舒緩制。這個動作本身代表着變化，前行一步，其耳得之聲、目遇之色跟上一步已然不同，不停的行走，景物不停地變換，風物牽動心神，思想感悟隨之而流動。身在行走心也在行走，只要心不停下來，人就有活下去的勁。如此，西域自行成為我不得不進行的舉動。</p>
+    <p><a href="./toc.html?topic=journal-silkroad">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-morocco" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_MOROCCO}`">
+  <div class="container">
+    <h1 class="display-4">北非摩洛哥</h1>
+    <h5>2006</h5>
+    <p>2005年從新疆回來後一直想去另一個伊斯蘭國度，首選是伊朗，不過憑區區兩星期的年假連走馬看花也不夠，後來得知竟然有一個伊斯蘭國家不用簽證入境﹐於是立即訂機票﹐手拿Rough Guide﹐與M上路往北非摩洛哥去也。</p>
+    <p><a href="./toc.html?topic=journal-morocco">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-china1999" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_CHINA1999}`">
+  <div class="container">
+    <h1 class="display-4">風霜雪雨中原行</h1>
+    <h5>1999</h5>
+    <p>中原是我長久以來夢中常遊之地﹔商周建制﹑戰國爭雄﹑秦一統﹑漢唐盛﹑北宋風雲，莫不是發生在這片黃土之上。從前只在書本上看過的東西，現在可以親身領略，雖不能說已經一嘗夙願，但飛鴻雪泥，也已留下足印了﹗</p>
+    <p><a href="./toc.html?topic=journal-china1999">目錄</a></p>
+  </div>
+</button>
+
+<button id="journal-china2002" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_CHINA2002}`">
+  <div class="container">
+    <h1 class="display-4">獨走江南</h1>
+    <h5>2002</h5>
+    <p>逃離，是我這次出遊的導因。逃離鎖身的生活、逃離鎖心的環境。林語堂曾說：「旅行以求忘卻一切」，只有忘記了慣常生活環境建立起來的身份、放下隨之而來的責任，才可恢復本來面目。可是逃離枷鎖並不保證你能到達釋放的彼岸，對自己的再發現也不一定帶來新啟示，在企圖突破限制的同時，會發現更多新限制。於是遊浪不再浪漫，有時甚至變得苦澀、難捱。</p>
+    <p>這樣說來，老遠跑來一倘，究竟得到甚麼？明萬曆年間一名道人屠龍先生把他雲遊天下的心德寫成一書【冥寥子遊】，在結尾他道：「目之所見，耳之所聞，身之所接，物態非常，情境靡一，無非鍊心之助。雖浪跡亦不為無補哉。」原來，「鍊心」方是我此行的主題。人生的歷程本來就是一個發現世界、發現自我的歷程，有甚麼比遊浪能更有效地實踐這個雙目標？縱使在旅程中未能得到預期希望得到的，我仍然樂於此道而不疲，因增廣見聞或足一時之用，鍊心卻是一生之效。</p>
+    <p><a href="./toc.html?topic=journal-china2002">目錄</a></p>
+  </div>
+</button>
+
+<!-- <button id="journal_annapurna" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_JOURNAL_ANNAPURNA}`">
+  <div class="container">
+    <h1 class="display-4">徒步喜瑪拉雅</h1>
+    <p>「紅樓夢」裡賈寶玉和林黛玉短暫的一生其實是尋找故鄉的過程，他們的家鄉，在靈河彼岸、三生石上、神瑛使者澆灌絳珠仙草之處。人的故鄉呢？我們到底要回到那裡？那處“彼岸”，人終其一生是達不到的，但是人間到底存留著接近“彼岸”的地方，那就是皓潔純淨的雪山。我被雪山吸引，就如遊子逃不了家的召喚、流浪者抵不住回鄉的誘惑。雪山，是我在塵世中心靈的家鄉。</p>
+    <p><a href="./toc.html?topic=journal-annapurna">目錄</a></p>
+  </div>
+</button> -->
+
+<!-- Load React -->
+<script src="./assets/js/react.production.min.js" ></script>
+<script src="./assets/js/react-dom.production.min.js" ></script>
+
+<!-- ============= BEGIN NAV BAR JS =================== -->
+<script>
+  g_category = G_CAT_JOURNALS;
+</script>
+
+<!-- Load the navbar React component -->
+<script src="./components/navbar.js"></script>
+<!-- ============= END NAV BAR  JS =================== -->
+
+<!-- html footer, include </body> -->
+<script src="./components/partials/footer.js"></script>

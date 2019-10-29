@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+    <meta charset="utf-8" />
+    <title>littleboat5</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <script src="./assets/js/jquery-3.4.1.min.js" ></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./components/util.js"></script>
+  </head>
+
+  <body  class="gallery">
+
+<!-- cannot use header.js coz the meta tag will be pushed down in the display
+html enhance ruining the encoding -->
+<!-- <script  src="./components/partials/header.js"></script> -->
+
+<div id="main_navbar"></div> <!-- place holder for the nav bar -->
+
+<button id="picture-tibet" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_TIBET}`">
+  <div class="container">
+    <h1 class="display-4">Tibet</h1>
+    <p><a href="./toc.html?topic=picture-tibet">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-annapurna" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_ANNAPURNA}`">
+  <div class="container">
+    <h1 class="display-4">Himalayas</h1>
+    <p><a href="./toc.html?topic=picture-annapurna">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-nepal" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_NEPAL}`">
+  <div class="container">
+    <h1 class="display-4">Nepal</h1>
+    <p><a href="./toc.html?topic=picture-nepal">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-silkroad" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_SILKROAD}`">
+  <div class="container">
+    <h1 class="display-4">Silkroad</h1>
+    <p><a href="./toc.html?topic=picture-silkroad">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-turkey" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_TURKEY}`">
+  <div class="container">
+    <h1 class="display-4">Turkey</h1>
+    <p><a href="./toc.html?topic=picture-turkey">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-morocco" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_MOROCCO}`">
+  <div class="container">
+    <h1 class="display-4">Morocco</h1>
+    <p><a href="./toc.html?topic=picture-morocco">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-europe2003" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_EUROPE2003}`">
+  <div class="container">
+    <h1 class="display-4">Czech．Slovakia．Hungary</h1>
+    <p><a href="./toc.html?topic=picture-europe2003">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-sichuan" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_SICHUAN}`">
+  <div class="container">
+    <h1 class="display-4">Sichuan 四川</h1>
+    <p><a href="./toc.html?topic=picture-sichuan">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="picture-china2002" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./gallery.html?topic=${G_TOPIC_PICTURE_CHINA2002}`">
+  <div class="container">
+    <h1 class="display-4">徽州．江南</h1>
+    <p><a href="./toc.html?topic=picture-china2002">Table of Contents</a></p>
+  </div>
+</button>
+
+<!-- Load React -->
+<script src="./assets/js/react.production.min.js" ></script>
+<script src="./assets/js/react-dom.production.min.js" ></script>
+
+<!-- ============= BEGIN NAV BAR JS =================== -->
+<script>
+  g_category = G_CAT_PICTURES;
+</script>
+
+<!-- Load the navbar React component -->
+<script src="./components/navbar.js"></script>
+<!-- ============= END NAV BAR  JS =================== -->
+
+<!-- html footer, include </body> -->
+<script src="./components/partials/footer.js"></script>

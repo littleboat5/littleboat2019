@@ -1,0 +1,391 @@
+// variables
+$font-general: 'Sarabun', sans-serif;
+$bgcolor-navbar: rgba(5,128,177, 1);
+$bgcolor-navbar-stories: #1c6c6d;
+$bgcolor-navbar-journals: #2d455f;
+$bgcolor-navbar-pictures: #771717;
+$bgcolor-gallery: black;
+$font-color-gallery: #cecece;
+$navlink-color: rgba(255,255,255, 0.8);
+$navlink-color-hover: white;
+
+
+@mixin setNavbarColor($bgcolor){
+  background-color: $bgcolor;
+  .dropdown-menu{
+    background-color: $bgcolor;
+  }
+}
+
+/*============== BODY ==================*/
+body {
+  font-family: $font-general;
+}
+
+body.gallery{
+  background-color: $bgcolor-gallery;
+  header {
+    padding-top: 1rem;
+    color: $font-color-gallery;
+  }
+  .card {
+    background-color: $bgcolor-gallery;
+    color: $font-color-gallery;
+  }
+}
+/*============== NAV BAR ==================*/
+#navbar-littleboat5 {
+  @include setNavbarColor($bgcolor-navbar);
+}
+#navbar-stories {
+  @include setNavbarColor($bgcolor-navbar-stories);
+}
+#navbar-journals {
+  @include setNavbarColor($bgcolor-navbar-journals);
+}
+#navbar-pictures {
+  @include setNavbarColor($bgcolor-navbar-pictures);
+}
+
+%topicTitle{
+  color: rgba(255,255,255, 0.5);
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+nav {
+  .topic-title {
+    font-size: 20px;
+    @extend %topicTitle;
+    .topic-title-year{
+      font-size: 12px;
+    }
+  }
+  .topic-title-sm {
+    font-size: 14px;
+    @extend %topicTitle;
+    .topic-title-year{
+      font-size: 6px;
+    }
+  }
+}
+nav.navbar-articles{
+    position: fixed;
+    z-index: 1;
+    width:100%;
+}
+
+a.nav-link, a.dropdown-item {
+  color: $navlink-color !important;
+  &:hover {
+    color: $navlink-color-hover !important;
+    background-color: transparent;
+  }
+}
+.dropdown-toggle::after {
+  display:none;
+}
+.dropdown-menu {
+  border: none ;
+  .dropdown-divider {
+    width: 275px;
+  }
+}
+
+/*============== INDEX PAGES ==================*/
+%category{
+  text-align: center;
+  background-color: #637992;
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
+  h1 {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+#cat_stories{
+  @extend %category;
+}
+#cat_journals{
+  @extend %category;
+}
+#cat_pictures {
+  @extend %category;
+}
+%button-bgimage{
+  border-top: 0.5rem;
+  border-bottom: 0.5rem ;
+  border-left: 1rem ;
+  border-right: 1rem ;
+  border-color: black;
+  border-style: solid;
+}
+button.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem;
+  width: 100%;
+  border-width: 0;
+  background-size: cover;
+  background-position: center center;
+}
+#story_noodles{
+  background-image:url("./../images/story_noodle.jpg") ;
+  h1 {color: #6b4019;}
+  p{ color: black; }
+  a {color:#0d3a38;}
+}
+#story_annapurna{
+  background-image:url("./../images/story_annapurna.jpg");
+  h1 {color: #4c3838; }
+  p {  color: black;  }
+  a {color:#102f31;}
+}
+#story_teahorse{
+  background-image:url("./../images/story_teahorse.jpg");
+  h1 {color: #3a2d07; }
+  p {  color: black;  }
+  a {color:#051846;}
+}
+#story_rinpoche{
+  background-image:url("./../images/story_rinpoche.jpg");
+  h1 {color: #3e2e00; }
+  p {  color: #271300;  }
+  a {color:black;}
+}
+#story_eastturkey{
+  background-image:url("./../images/story_eastturkey.jpg");
+  h1 {color: #3a2d07; }
+  p {  color: #2b0606;  }
+  a {color:black;}
+}
+#journal-annapurna{
+  background-image:url("./../images/journal_annapurna.jpg");
+  h1, h4, h5 {color: #083c42; }
+  p {  color: #001325;}
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-teahorse{
+  background-image:url("./../images/journal_teahorse.jpg");
+  h1, h4, h5 {color: black; }
+  p {  color: #150a14;}
+  a {color:white;}
+  @extend %button-bgimage;
+}
+#journal-tibet{
+  background-image:url("./../images/journal_tibet.jpg");
+  h1, h4, h5 {color: black; }
+  p {  color: #150a14;}
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-nepal{
+  background-image:url("./../images/journal_nepal.jpg");
+  h1, h4, h5 {color: black; }
+  p {  color: #150a14;}
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-sichuan{
+  background-image:url("./../images/journal_sichuan.jpg");
+  h1, h4, h5 {color: black; }
+  p {  color: #150a14;}
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-morocco{
+  background-image:url("./../images/journal_morocco.jpg");
+  h1, h5 {color: #351525; }
+  p {  color: #150a14;}
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-china1999{
+  background-image:url("./../images/journal_china1999.jpg");
+  h1, h5 {color: black; }
+  p {  color: black;  }
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-china2002{
+  background-image:url("./../images/journal_china2002.jpg");
+  h1, h5 {color: black; }
+  p {  color: #330000;  }
+  a {color:black;}
+  @extend %button-bgimage;
+}
+#journal-silkroad{
+  background-image:url("./../images/journal_silkroad.jpg");
+  h1, h5 {color: #6d3a02; }
+  p {  color: #330000;  }
+  a {color:black;}
+  @extend %button-bgimage;
+}
+%picture-link{
+  h1, h5 {color: #541515; }
+  p {  color: #330000;  }
+  a {color:#541515;}
+}
+#picture-china2002{
+  background-image:url("./../images/pic_china2002.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-europe2003{
+  background-image:url("./../images/pic_europe2003.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-annapurna{
+  background-image:url("./../images/pic_annapurna.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-tibet{
+  background-image:url("./../images/pic_tibet.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-nepal{
+  background-image:url("./../images/pic_nepal.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-sichuan{
+  background-image:url("./../images/pic_sichuan.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-silkroad{
+  background-image:url("./../images/pic_silkroad.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-morocco{
+  background-image:url("./../images/pic_morocco.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+#picture-turkey{
+  background-image:url("./../images/pic_turkey.jpg");
+  @extend %button-bgimage;
+  @extend %picture-link;
+}
+/*============== Table of CONTENT ==================*/
+.toc-td {
+  padding-right: 0.5rem;
+  padding-top: 0.7rem;
+}
+.toc{
+  padding-top: 1rem;
+  h2{
+    color: rgba(0,0,0, 0.5);
+  }
+}
+/*============== ARTICLE HEADER ==================*/
+header {
+  button {
+    border: none;
+    background: transparent;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  button.fs-larger{
+    font-size: 150%;
+  }
+  button.fs-smaller{
+    font-size: 100%;
+  }
+}
+/*============== CONTENT ==================*/
+#main_articles, #main_gallery{
+  padding-top: 5rem;
+}
+
+article{
+  div.card {
+    max-width: 992px;
+    border: none;
+    div.col-md-4 {
+      img {
+        padding-bottom: 0.3em;
+      }
+    }
+    div.col-md-8{
+      div.card-body {
+        padding: 0 0.5em 1em;
+      }
+    }
+    div.card-body {
+      padding: 0 0 1em;
+    }
+  }
+  .chinese-text{
+    letter-spacing: 1.5px;
+  }
+  .img-below-text {
+    vertical-align: top;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+  }
+  .article-video{
+    width:100%;
+    padding-top: 0.5em;
+    outline: none;
+  }
+}
+
+footer {
+    padding: 20px;
+    margin-top: 2rem;
+    color: #6a6a6b;
+}
+
+.adj-size {
+  font-size: 20px;
+}
+
+/*============== BREAKPOINTS specific ==================*/
+
+@media (min-width: 576px){
+  .img-below-text{
+    width: 50%;
+  }
+  nav {
+    .topic-title {
+      font-size: 24px;
+      .topic-title-year{
+        font-size: 14px;
+      }
+    }
+    .topic-title-sm {
+      font-size: 18px;
+      .topic-title-year{
+        font-size: 8px;
+      }
+    }
+  }
+  .adj-size {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px){
+  nav {
+    .topic-title {
+      font-size: 28px;
+      .topic-title-year{
+        font-size: 16px;
+      }
+    }
+    .topic-title-sm {
+      font-size: 22px;
+      .topic-title-year{
+        font-size:12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<script charset="utf-8" src="./components/partials/header.js"></script>
+
+<div id="main_navbar"></div> <!-- place holder for the nav bar -->
+
+<button id="story_noodles"  class="jumbotron jumbotron-fluid"
+        onclick="window.location=`./articles.html?topic=${G_TOPIC_STORY_NOODLE}`">
+  <div class="container">
+    <h1 class="display-4">Noodle Stories</h1>
+    <p>This set is a collection of the noodles I have eaten during my travels. Behind each bowl of noodle is the person who prepares it and the place where it is served. Reach beyond the noodle and you will discover many interesting places and unique characters!</p>
+    <p><a href="./toc.html?topic=story-noodle">Table of Contents</a></p>
+</div>
+</button>
+
+<button id="story_annapurna" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_STORY_ANNAPURNA}`">
+  <div class="container">
+    <h1 class="display-4">Trekking the Himalayas</h1>
+    <p >In October 2007, I trekked the Annapurna Circuit in the Himalayas. It is the most unforgettable two weeks I have had in my life. Lacking trekking experiences and proper clothings and gears, I somehow survived the 2 weeks of constant battles with the forces of nature. The trek started at Besisahar (800m), going counter-clockwise up to the highest point at Thorung La Pass (5416m), and then down to Jomsom (2800m). The trek took 14 days from Besisahar to Jomsom, where I took a flight (on a 19-passenger twin turboprop plane) back to Pokhara.</p>
+    <p><a href="./toc.html?topic=story-annapurna">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="story_teahorse" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_STORY_TEAHORSE}`">
+  <div class="container">
+    <h1 class="display-4">Traversing the Tea & Horse Caravan Trail</h1>
+    <p>In September 2007, I hopped on a local bus in SW China and began a six-day, multi-bus journey on the the ancient Tea & Horse caravan route. The destination is Lhasa, Tibet. This Tea & Horse route that winds through deep gorges and canyons, though extremely treacherous, is stunningly beautiful.</p>
+    <p><a href="./toc.html?topic=story-teahorse">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="story_rinpoche" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_STORY_RINPOCHE}`">
+  <div class="container">
+    <h1 class="display-4">Pilgrimage to Guru Rinpoche's cave</h1>
+    <p>Legend had that the Buddhist master Guru Rinpoche (蓮花生) from the 8th century had spent several years mediating in a cave in Tibet. The cave became a popular pilgrimage site for Buddhist but thankfully it is still off-the-beaten-track. </p>
+    <p><a href="./toc.html?topic=story-rinpoche">Table of Contents</a></p>
+  </div>
+</button>
+
+<button id="story_eastturkey" class="jumbotron jumbotron-fluid"
+      onclick="window.location=`./articles.html?topic=${G_TOPIC_STORY_EASTTURKEY}`">
+  <div class="container">
+    <h1 class="display-4">Roadtrip to the Turkey-Armenia border</h1>
+    <p ></p>
+    <p><a href="./toc.html?topic=story-eastturkey">Table of Contents</a></p>
+  </div>
+</button>
+
+<!-- Load React -->
+<script src="./assets/js/react.production.min.js" ></script>
+<script src="./assets/js/react-dom.production.min.js" ></script>
+
+<!-- ============= BEGIN NAV BAR JS =================== -->
+<script>
+  g_category = G_CAT_STORIES;
+</script>
+
+<!-- Load the navbar React component -->
+<script src="./components/navbar.js"></script>
+<!-- ============= END NAV BAR  JS =================== -->
+
+<!-- html footer, include </body> -->
+<script src="./components/partials/footer.js"></script>
+
+<script>
+  $('body').addClass("gallery"); //change background and font colors
+</script>

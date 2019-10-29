@@ -1,0 +1,49 @@
+<!-- header, up to <body> -->
+<script charset="utf-8" src="./components/partials/header.js"></script>
+
+<div id="main_navbar"></div> <!-- place holder for the nav bar -->
+
+<!-- <header class="container">
+  <aside class="fs-container">
+    <button type="button" class="fs-larger" onclick="adjustFontSize('larger')">A</button>
+    <button type="button" class="fs-smaller" onclick="adjustFontSize('smaller')">A</button>
+  </aside>
+</header> -->
+
+<section  class="container">
+  <div id="main_articles"></div> <!-- place holder for the main content -->
+</section>
+
+<!-- Load React -->
+<script src="./assets/js/react.production.min.js" ></script>
+<script src="./assets/js/react-dom.production.min.js" ></script>
+
+<!-- ============= BEGIN NAV BAR JS =================== -->
+<script>
+//===== is it story, journal or picture? navbar color differs for each category
+  let g_category = getCategory();
+
+//===== figure out which json to load via the query string
+  let g_json = getTopicFromQueryString();
+
+//===== hide navbar when scroll down, show navbar when scroll up
+  $( ()=>{ manipulateNavbar(); } );
+
+</script>
+
+<!-- Load the navbar React component -->
+<script src="./components/navbar.js"></script>
+<!-- ============= END NAV BAR  JS =================== -->
+
+<!-- ========== BEGIN MAIN CONTENT JS =================== -->
+<script>
+  jump2Anchor();
+</script>
+
+<!-- Load the main content React component -->
+<script src="./components/articles.js"></script>
+
+<!-- ========== END MAIN CONTENT JS =================== -->
+
+<!-- html footer, include </body> -->
+<script src="./components/partials/footer.js"></script>

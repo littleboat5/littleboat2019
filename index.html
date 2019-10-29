@@ -1,0 +1,61 @@
+<!-- header, up to <body> -->
+<script charset="utf-8" src="./components/partials/header.js"></script>
+
+<div id="main_navbar"></div> <!-- nav bar -->
+
+<div  id="cat_stories">
+  <span class="ss-link"><a href='./stories.html'><h1 class="display-4">Stories</h1></a></span>
+  <ul class="slideshow">
+    <li class="ss_stories"></li>
+    <li class="ss_stories"></li>
+    <li class="ss_stories"></li>
+    <li class="ss_stories"></li>
+  </ul>
+</div>
+
+<div  id="cat_pictures">
+  <span class="ss-link">
+    <a href='./pictures.html'><h1 class="display-4">Pictures</h1></a>
+  </span>
+
+  <ul class="slideshow">
+    <li class="ss_pic"></li>
+    <li class="ss_pic"></li>
+    <li class="ss_pic"></li>
+    <li class="ss_pic"></li>
+  </ul>
+</div>
+
+
+<div  id="cat_journals">
+  <span class="ss-link">
+    <a href='./journals.html'><h1 class="display-4">Journals</h1></a>
+  </span>
+  <ul class="slideshow">
+    <li class="ss_journals"></li>
+    <li class="ss_journals"></li>
+    <li class="ss_journals"></li>
+    <li class="ss_journals"></li>
+  </ul>
+</div>
+
+
+<!-- Load React -->
+<script src="./assets/js/react.production.min.js" ></script>
+<script src="./assets/js/react-dom.production.min.js" ></script>
+
+<!-- ============= BEGIN NAV BAR JS =================== -->
+<script>
+  let g_category = G_CAT_INDEX;
+</script>
+
+<!-- Load the navbar React component -->
+<script src="./components/navbar.js"></script>
+<!-- ============= END NAV BAR  JS =================== -->
+
+<!-- html footer, include </body> -->
+<script src="./components/partials/footer.js"></script>
+
+<script>
+  $('body').addClass("gallery"); //change background and font colors
+</script>
