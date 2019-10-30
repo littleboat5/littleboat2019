@@ -19,3 +19,5 @@
 /babel.sh
 /sass.sh
 /server.js
+/package-lock.json
+/package.json
